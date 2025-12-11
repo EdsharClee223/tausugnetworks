@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raina - Inspiration</title>
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #030508;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .back-arrow {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #00f2ea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #00f2ea;
+            transition: all 0.3s ease;
+            font-size: 18px;
+        }
+
+        .back-arrow:hover {
+            background: #00f2ea;
+            color: #030508;
+            box-shadow: 0 0 20px rgba(0, 242, 234, 0.5);
+        }
+
+        .raina-name {
+            font-size: 4rem;
+            font-family: 'Cinzel', serif;
+            color: #00f2ea;
+            margin-bottom: 20px;
+            animation: rainaGlow 2s ease-in-out infinite alternate;
+            text-shadow: 0 0 20px #00f2ea;
+        }
+
+        @keyframes rainaGlow {
+            0% { text-shadow: 0 0 20px #00f2ea; }
+            100% { text-shadow: 0 0 40px #00f2ea, 0 0 60px #00f2ea; }
+        }
+
+        .hijabi-portrait {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            position: relative;
+            animation: portraitFloat 3s ease-in-out infinite;
+            background: url('asset/raina.jpg') center/cover no-repeat;
+            border: 2px solid #ffd700;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+        }
+
+        @keyframes portraitFloat {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(1deg); }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-arrow">&larr;</a>
+    <div class="hijabi-portrait"></div>
+    <div class="raina-name">Raina</div>
+</body>
+</html>
